@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<section class="bg-1 h-900x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white">
+
+                                <h5><b>BEST IN CITY</b></h5>
+                                <h1 class="mt-30 mb-15">Kareli Amul Parlour</h1>
+								<h5><b>AMUL DAIRY PRODUCTS HOME DELIVERY AVAILABLE IN KARELI AND IT'S NEARBY AREA</b></h5>
+								<h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>BOOK YOUR ORDER NOW</b></a></h6>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+
+<section class="story-area left-text center-sm-text pos-relative">
+        <div class="container">
+                <div class="heading">
+                        <img class="heading-img" src="images/heading_logo.png" alt="">
+                        <h2>See Our Home Delivery Pricing</h2>
+                </div>
+        </div><!-- container -->
+</section>
+
+<div class="container">
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Basic</li>
+    <li class="grey">UPTO 499</li>
+    <li>Delivery</li>
+    <li>Charges</li>
+    <li>Rs 50</li>
+    <li class="grey"><a class="button" href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." target="_blank">CLICK HERE TO BOOK YOUR ORDER</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="grey">499 to 999</li>
+    <li>Delivery</li>
+    <li>Charges</li>
+    <li>Rs 25</li>
+    <li class="grey"><a class="button" href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." target="_blank">CLICK HERE TO BOOK YOUR ORDER</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Premium</li>
+    <li class="grey">999 & Above</li>
+    <li>Delivery</li>
+    <li>Charges</li>
+    <li>FREE</li>
+    <li class="grey"><a class="button" href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." target="_blank">CLICK HERE TO BOOK YOUR ORDER</a></li>
+  </ul>
+</div>
+</div>
+
+
+
+
+<section>
+        <div class="container">
+
+                <h6 class="center-text mt-40 mt-sm-20 mb-30"><a href="dairy_products" class="btn-primaryc plr-25"><b>SEE COMPLETE DAIRY PRODUCTS MENU</b></a></h6>
+
+        </div><!-- container -->
+</section>
+
+
+
+{% endblock %}
+</body>
+</html>

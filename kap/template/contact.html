@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<section class="bg-6 h-500x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white pt-90">
+                                <h5><b>SAY HELLO</b></h5>
+                                <h3 class="mt-30 mb-15">Contact</h3>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+
+<section class="story-area left-text center-sm-text">
+        <div class="container">
+                <div class="heading">
+                        <img class="heading-img" src="{% static 'images/heading_logo.png' %}" alt="">
+                        <h2>Say hello</h2>
+                        <h5 class="mt-10 mb-30">Welcome to Kareli Amul Parlour</h5>
+                        <p class="mx-w-700x mlr-auto">Write Your query or mail us, we'll get back to you soon.</p>
+                </div>
+
+                <form class="form-style-1 placeholder-1" role="form" name="contact"  method="POST" action="/contact">
+                  {% csrf_token %}
+
+                        <div class="row">
+                                <div class="col-md-6"> <input class="mb-20" id="name" name="name" placeholder="Name" type="text" pattern="[A-Za-z\s]+" autocomplete="off" title="Enter Name" required>  </div>
+                                <div class="col-md-6"> <input class="mb-20" id="ice" name="ice" placeholder="Ice Creame Name" type="text" pattern="[A-Za-z\s]+" autocomplete="off" title="Enter Ice Creame Name" required>  </div>
+                                <div class="col-md-6"><input class="mb-20" id="ph_1" name="ph_1" placeholder="Contact Number" type="text" pattern="[6789][0-9]{9}" autocomplete="off" title="Enter Valid Mobile Number" required>  </div>
+                                <div class="col-md-6"><input class="mb-20" id="email" name="email" placeholder="Email" type="email" title="Enter Valid E-mail" autocomplete="off" required>  </div>
+                                <div class="col-md-12"><textarea class="h-200x ptb-20" id="query" name="query" autocomplete="off" placeholder="Write Your Query Here" rows="5"></textarea></div>
+                        </div><!-- row -->
+                        <h6 class="center-text mtb-30"><button class="btn-primaryc plr-25" type="submit">SEND MESSAGE</button></h6>
+                </form>
+				</div class="heading">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.3545490373685!2d81.8134800143831!3d25.426407528603978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398534d122bd2f4f%3A0x3438a2ddc85657f8!2sKareli+Amul+Parlour!5e0!3m2!1sen!2sin!4v1551606469018" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+        </div><!-- container -->
+</section>
+
+
+{% endblock %}
+</body>
+</html>

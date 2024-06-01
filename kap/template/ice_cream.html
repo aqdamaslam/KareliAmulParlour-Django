@@ -1,0 +1,848 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<section class="bg-7 h-500x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white pt-90">
+                                <h5><b>THE BEST IN TOWN</b></h5>
+                                <h3 class="mt-30 mb-15">Amul Ice Cream</h3>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+
+
+
+<section class="story-area left-text center-sm-text">
+        <div class="container">
+                <div class="heading"><h3>Choose From Wide Range Of Ice Cream Products </h3></div>
+        </div><!-- container -->
+</section>
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Amul 1Ltr Ice Cream Tubs</h4>
+        </div><!-- container -->
+</section>
+
+<section>
+        <div class="container">
+
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                  {% for m in ice1 %}
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{m.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{m.name}}</b><b class="color-primary float-right"> Rs {{m.price}}</b></h5>
+                                                <p class="pr-70">{{m.desc}}  </p>
+                                                <p class="mb-10"><b>Availability:</b>{% if m.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+                                                <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                  {% endfor %}
+				</div>
+
+		</div>
+</section>
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> 2 Ltr Ice Cream Bricks</h4>
+        </div><!-- container -->
+</section>
+
+
+
+<section>
+        <div class="container">
+
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                  {% for m in lmn %}
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{m.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{m.name}}</b><b class="color-primary float-right"> Rs {{m.price}}</b></h5>
+                                                <p class="pr-70">{{m.desc}}  </p>
+                                                <p class="mb-10"><b>Availability:</b>{% if m.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+                                                <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                  {% endfor %}
+				</div>
+
+		</div>
+</section>
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> 750ml Ice Cream Bricks Buy 1 Get 1 Free </h4>
+        </div><!-- container -->
+</section>
+
+
+
+
+<section>
+        <div class="container">
+
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                  {% for m in m3 %}
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{m.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{m.name}}</b><b class="color-primary float-right"> Rs {{m.price}}</b></h5>
+                                                <p class="pr-70">{{m.desc}}  </p>
+                                                <p class="mb-10"><b>Availability:</b>{% if m.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+                                                <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                  {% endfor %}
+				</div>
+
+		</div>
+</section>
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> 1.25-ltr Ice Cream Bricks</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/125-ltr/butterscotch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Butter Scotch Bliss</b><b class="color-primary float-right">Rs 160.00</b></h5>
+                                                <p class="pr-70">Enjoy the rich taste of Butterscotch with the goodness of real milk ice cream. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/125-ltr/chocochips.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Choco Chips</b><b class="color-primary float-right">Rs 200.00</b></h5>
+                                                <p class="pr-70">Lose yourself with the delicious combination of sweet cream, cocoa and choco chips. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/125-ltr/strawberry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Strawberry</b><b class="color-primary float-right">Rs 140.00</b></h5>
+                                                <p class="pr-70">The minute you open Strawberry Magic, it will take your celebration to another level. Every bite of Strawberry Magic ice cream is brimming with Strawberry and pure taste of Am' Milk. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/125-ltr/vanilla.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Vanilla Royale</b><b class="color-primary float-right">Rs 140.00</b></h5>
+                                                <p class="pr-70">Relish royal taste of vanilla with the goodness of real milk ice cream. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> creme-rich Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/creme-rich/almond-fudge.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Almond Fudge</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">India's richest, creamiest ice creame. Indulge in crunchy Almond Fudge and enjoy the fine taste of richness. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/creme-rich/caramel.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Cream Rich Caramel</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">India's richest, creamiest ice creame. Indulge in crunchy Caramel and enjoy the fine taste of richness. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/creme-rich/chocolate-fudge.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocolate Fudge</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">India's richest, creamiest ice creame. Indulge in crunchy Chocolate Fudge and enjoy the fine taste of richness. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Cups Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/afghan-dryfruit.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Afgan Dry Fruit</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Let the magic of Afghan Dryfruit mesmerise your pallete with the goodness of real milk ice creamein a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/american-nut.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>American Nut</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Goodness of American nuts with goodness of real milk ice creame in a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/butterscotch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Butter Scotch</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">The rich flavour of Butterscotch and the goodness of real milk ice creame now in a convenient cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/kaju-draksha-kishmish.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Kaju Draksha</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Let Kaju and Kishmish tingle your tastebuds with goodness of real milk ice creame in a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/kesar-pista-royale.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Kesar Pista Royale</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Enjoy the richness of Pista with goodness of real milk ice creame in a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/rajbhog.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Rajbhog</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Let your tastebuds enjoy the royal taste of Rajbhog with goodness of real milk ice creame in a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/strawberry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Strawberry</b><b class="color-primary float-right">Rs 10.00</b></h5>
+                                                <p class="pr-70">Let your tastebuds enjoy the royal taste of Strawberry with goodness of real milk ice creame in a cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/vanilla.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Vanilla</b><b class="color-primary float-right">Rs 10.00</b></h5>
+                                                <p class="pr-70">A real classic gets a makeover with Amul Cups. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/cups/zafrani-badam.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Zafrani Badam Pista</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Relish in the exquiste taste of Zafrani Badam with goodness of real milk ice creame in a cups. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Frozen Yoghurt Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/frozen-yoghurt/cashew-mango.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Cashew Mango</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Health meets taste. With the goodness of yoghurt and fun taste of real fruits, vitamins and probiotic bacteria added to an exciting taste make it a desirable dessert for anyone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/frozen-yoghurt/flavyo-mango.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Flavyo Mango</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Health meets taste. With the goodness of yoghurt and fun taste of real fruits, vitamins and probiotic bacteria added to an exciting taste make it a desirable dessert for anyone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/frozen-yoghurt/flavyo-strawberry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Flavyo Strawberry</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Health meets taste. With the goodness of yoghurt and fun taste of real fruits, vitamins and probiotic bacteria added to an exciting taste make it a desirable dessert for anyone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/frozen-yoghurt/flavyo-wild-berry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Flavyo Wild Berry</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Health meets taste. With the goodness of yoghurt and fun taste of real fruits, vitamins and probiotic bacteria added to an exciting taste make it a desirable dessert for anyone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/frozen-yoghurt/greek-yogurt.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Greek Yoghurt</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Health meets taste. With the goodness of yoghurt and fun taste of real fruits, vitamins and probiotic bacteria added to an exciting taste make it a desirable dessert for anyone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Novelties Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/novelties/cassata.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Cassata</b><b class="color-primary float-right">Rs 45.00</b></h5>
+                                                <p class="pr-70">Enjoy cake and ice cream together. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/novelties/matka-kulfi-shahi-pista.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Matka Kulfi</b><b class="color-primary float-right">Rs 35.00</b></h5>
+                                                <p class="pr-70">Enjoy delicious rich kulfi in tradition matka. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Stick Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/raspberry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Raspberry Dolly</b><b class="color-primary float-right">Rs 15.00</b></h5>
+                                                <p class="pr-70">Delicious on the outside and tasty on the inside, Amul Duetz packs in two flours Vanilla and Raspberry in one, and real milk vanilla ice creame. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/probiotic.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocobar</b><b class="color-primary float-right">Rs 15.00</b></h5>
+                                                <p class="pr-70">Tastier and healthier than ice creame. Amul Probiotic chocobar comes with the goodness of pro-biotic bacteria, real milk and chocolate. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/orange.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Orange Froot Licks</b><b class="color-primary float-right">Rs 10.00</b></h5>
+                                                <p class="pr-70">Beat the heat this season with the taste of orange with Amul Froot Lickz. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/orange-2.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Orange Licks</b><b class="color-primary float-right">Rs 5.00</b></h5>
+                                                <p class="pr-70">Beat the heat this season with the taste of orange with Amul Ice Lickz. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/Mawa-Malai.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Mawa Malai Kulfi</b><b class="color-primary float-right">Rs 20.00</b></h5>
+                                                <p class="pr-70">Give your tastebud a traditional twist with Amul Mawa Malai. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/mango.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Mango Dolly</b><b class="color-primary float-right">Rs 15.00</b></h5>
+                                                <p class="pr-70">Delicious on the outside and tasty on the inside, Amul Duetz packs in two flours Vanilla and Mango in one, and real milk vanilla ice creame. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/mango-3.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Mango Ice Licks</b><b class="color-primary float-right">Rs 5.00</b></h5>
+                                                <p class="pr-70">Beat the heat this season with the taste of mango with Amul Ice Lickz. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/mango-2.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Mango Froot Licks</b><b class="color-primary float-right">Rs 10.00</b></h5>
+                                                <p class="pr-70">Beat the heat this season with the taste of mango with Amul Froot Lickz. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/frostic.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Frostik</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">A chocolate centre wrapped in reaf milk chocolate ice creame and coated in crispy nuts, Frostik is a real chocolate connaisseur's delight. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/epic_strawberry.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Epic Strawberry</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">Raise the bar of indulgence with Amul Epic, India finest ice creame bar, coated with rich Belgium chocolate and crunchy almonds. Go ahead, choose Strawberry and let the epicness begin. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/epic_cappuccino.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Epic Cappuccino</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">Chocolate and coffee with Amul Bite into the exquisite taste of Choco Cappuccino. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/epic_almond.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Epic Choco Almond</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">Raise the bar of indulgence with Amul Epic, India finest ice creame bar,coated with rich Belgium chocolate and crunchy almonds. Go ahead, choose Choco Almond and let the epicness begin. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/cola.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Cola Ice Licks</b><b class="color-primary float-right">Rs 5.00</b></h5>
+                                                <p class="pr-70">Beat the heat this season with the taste of cola with Amul Ice Lickz </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/chocobar-crackles.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocobar Crackels</b><b class="color-primary float-right">Rs 120.00</b></h5>
+                                                <p class="pr-70">Light up your family with the exciting taste of Chocobar Crackles. Pack of 4 for the whole family. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/belgian.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Belgian Chocolate</b><b class="color-primary float-right">Rs 160.00</b></h5>
+                                                <p class="pr-70">Let your palate enjoy the rich taste of Belgian Chocolate in a cone with Amul Belgian Choc Tricone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/stick/almond-crunch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Almond Crunch</b><b class="color-primary float-right">Rs 120.00</b></h5>
+                                                <p class="pr-70">Experiance the richness of Almonds in a crunchy ice cream. Pack of 4 for the whole family. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Sugar Free Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sugarfree-tubs/sugarfreetubs.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Shahi Anjir</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Indulge in the richness of the choicest Anjir and the deliciousness of real milk without the worry about the calories, with Amul Shahi Anjir Sugar-free ice creame. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sugarfree-tubs/sugarfree-vanilla.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Vanilla</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Sugar free. Guilt free. Worry free. India's first low fat diabetic delight. India's first low fat dessert specially formulated for diabetics. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sugarfree-tubs/sugarfree-butterscotch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocolate Cone</b><b class="color-primary float-right">Rs 40.00</b></h5>
+                                                <p class="pr-70">Sugar free. Guilt free. Worry free. India's first low fat diabetic delight. India's first low fat dessert specially formulated for diabetics. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Sundaes Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sundaes-100-125ml/black-current.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Black Current</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Your favorite black currant flavour now in 100ml cup. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sundaes-100-125ml/chocolate.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocolate</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Bite into the richness of Chocolate with Amul Chocolate Sundae. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/sundaes-100-125ml/khatta-meetha-mango.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Khatta Meetha Mango</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Let the taste of Khatta Meetha Mango tingle your tastebuds. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+
+
+
+
+
+
+<section class="story-area bg-seller color-white pos-relative">
+        <div class="pos-bottom triangle-up"></div>
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container">
+                <h4 class="font-30 font-sm-20  center-text mb-25"><b>Amul</b> Tricone Ice Cream</h4>
+        </div><!-- container -->
+</section>
+
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+
+                <div class="row">
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/tricone/butterscotch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Butterscotch</b><b class="color-primary float-right">Rs 25.00</b></h5>
+                                                <p class="pr-70">Real milk ice creame, butterscotch topping and toasted nuts come together to give you the holy trinity of ice creame, Amul Tricone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/tricone/chococrunch.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Choco Crunch</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Delicious Chocolate, real milk ice creame and toasted nuts make Amul Tricone the crunchiest choclate ice creame, a feat for yor senses. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/tricone/kesar_pista.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Kesar Pista</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Enjoy the goodness of Kesar and Pista in a cone with Amul Kesar Pista Cone. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/tricone/Pista-Badam.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Pista Badam</b><b class="color-primary float-right">Rs 30.00</b></h5>
+                                                <p class="pr-70">Delicious Pista Badam ice creame inside crunchy cone with Pistachio and Almond nuts. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+
+                        <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="images/ice-cream/tricone/choco-top-tricone.png" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>Chocolate</b><b class="color-primary float-right">Rs 160.00</b></h5>
+                                                <p class="pr-70">Delicious Chocolate, real milk ice creame and toasted nuts make Amul Tricone the crunchiest choclate ice creame, a feat for yor senses. </p>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+
+				</div>
+		</div>
+	</section>
+</section>
+{% endblock %}
+</body>
+</html>

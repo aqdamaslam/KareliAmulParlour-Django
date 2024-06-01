@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+{% load staticfiles %}
+<html lang="en">
+<head>
+
+		<!-- Favicons -->
+		<link rel="icon" type="images/" href="{% static 'favicon.png' %}" />
+
+
+        <title>Kareli Amul Parlour</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+		<meta name="description" content="AMUL PARLOUR,KARELI AMUL PARLOUR,ICE,ICE-CREAM,MILKBADAM,COCO,CAFE,AMULYA,GHEE,COWGHEE,FLAVORMILK,COLDCOFFE,LASSI,BUTTERMILK,MATTHA,CREAM,CHOCOLATE,BUY1GET1,FAMILYPACK,STICK,CORNETTO,CONE,KULFI,TUB,MATKA-KULFI,CHOCOBAR,VANILLA,BUTTERSCOTCH,KESARPISTA,RAJBHOG,CAN,BOTTEL,ALLAHABAD,KARELI,ATALA,CIVIL LINES,CHOWK,">
+		<meta name="keywords" content="AMUL SHOP IN ALLAHABAD">
+		<meta name="author" content="KARELI AMUL PARLOUR">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'fonts/beyond_the_mountains-webfont.css' %}" type="text/css"/>
+
+        <!-- Stylesheets -->
+        <link href="{% static 'plugin-frameworks/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'plugin-frameworks/swiper.css' %}" rel="stylesheet">
+        <link href="{% static 'fonts/ionicons.css' %}" rel="stylesheet">
+        <link href="{% static 'common/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+        <div class="container">
+                <a class="logo" href="index"><img src="{% static 'images/logo-white.png' %}" alt="Logo"></a>
+
+                <div class="right-area">
+                        <h6>
+				  								<form class="form-inline" action="/search_list" method="POST">
+														{% csrf_token %}
+				    								<input class="form-control mr-sm-2" name="query" type="text" placeholder="Search Amul Products">
+				    								<button class="btn btn-danger" type="submit">Search</button>
+				  								</form>
+												</h6>
+                </div><!-- right-area -->
+
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+
+                <ul class="main-menu font-mountainsre" id="main-menu">
+                        <li><a href="index">HOME</a></li>
+                        <li><a href="/dairy_products">DAIRY PRODUCTS</a></li>
+                        <li><a href="/ice_cream">ICE CREAM</a></li>
+                        <li><a href="contact">CONTACT</a></li>
+                        <li><a href="delivery">DELIVERY CHARGES</a></li>
+                </ul>
+
+
+                <div class="clearfix"></div>
+        </div><!-- container -->
+</header>
+
+{% block content %}
+{% endblock %}
+{% block footer %}
+<footer class="pb-50  pt-70 pos-relative">
+        <div class="pos-top triangle-bottom"></div>
+        <div class="container-fluid">
+                <a href="index.html"><img src="{% static 'images/logo-white.png' %}" alt="Logo"></a>
+
+                <div class="pt-30">
+                        <p class="underline-secondary"><b>Address:</b></p>
+                        <p>GTB Nagar Kareli Prayagraj (Allahabad) - 211016 </p>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Phone:</b></p>
+                        <a href="tel:+91 72077 70877 ">+91 72077 70877 </a>
+						<h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                </div>
+
+                <div class="pt-30">
+                        <p class="underline-secondary mb-10"><b>Email:</b></p>
+                        <a href="mailto:yourmail@gmail.com"> kareliamulparlour@gmail.com</a>
+                </div>
+
+                <ul class="icon mt-30">
+                        <li><a href="https://www.facebook.com/KareliAmulParlourPrayagrajAllahabad/"  target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/kareliamulparlour/"  target="_blank"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+
+                <p class="color-light font-9 mt-50 mt-sm-30">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Website is managed <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://goo.gl/maps/FmUfBFForpo" target="_blank">Road Side Cloud Architect</a>
+</p>
+        </div><!-- container -->
+</footer>
+
+<!-- SCIPTS -->
+<script src="{% static 'plugin-frameworks/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugin-frameworks/swiper.js' %}"></script>
+<script src="{% static 'common/scripts.js' %}"></script>
+
+{% endblock %}
+</body>
+</html>

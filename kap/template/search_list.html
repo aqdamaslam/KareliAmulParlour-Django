@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<section class="bg-5 h-500x main-slider pos-relative">
+        <div class="triangle-up pos-bottom"></div>
+        <div class="container h-100">
+                <div class="dplay-tbl">
+                        <div class="dplay-tbl-cell center-text color-white pt-90">
+                                <h5><b>KARELI AMUL PARLOUR</b></h5>
+                                <h2 class="mt-30 mb-15">Search Results</h2>
+                        </div><!-- dplay-tbl-cell -->
+                </div><!-- dplay-tbl -->
+        </div><!-- container -->
+</section>
+
+<section>
+        <div class="container">
+                <div class="brder-t-light mt-sm-10 mb-60 mb-sm-40"></div>
+                <div class="row">
+						            {% for l in m1 %}
+                          <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{l.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{l.name}}</b><b class="color-primary float-right"> Rs {{l.price}}</b></h5>
+                                                <p class="pr-70">{{l.desc}} </p>
+												                        <p class="mb-10"><b>Availability:</b>{% if l.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+												                        <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+						            {% endfor %}
+
+
+                </div><!-- row -->
+
+                <div class="row">
+						            {% for l in m2 %}
+                          <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{l.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{l.name}}</b><b class="color-primary float-right"> Rs {{l.price}}</b></h5>
+                                                <p class="pr-70">{{l.desc}} </p>
+												                        <p class="mb-10"><b>Availability:</b>{% if l.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+												                        <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+						            {% endfor %}
+
+
+                </div><!-- row -->
+
+
+                <div class="row">
+						            {% for l in m3 %}
+                          <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{l.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{l.name}}</b><b class="color-primary float-right"> Rs {{l.price}}</b></h5>
+                                                <p class="pr-70">{{l.desc}} </p>
+												                        <p class="mb-10"><b>Availability:</b>{% if l.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+												                        <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+						            {% endfor %}
+                </div><!-- row -->
+
+
+                <div class="row">
+						            {% for l in m4 %}
+                          <div class="col-md-6">
+                                <div class="sided-90x mb-30">
+                                        <div class="s-left"><img class="br-3" src="{{l.photo.url}}" alt="Menu Image"></div><!--s-left-->
+                                        <div class="s-right">
+                                                <h5 class="mb-10"><b>{{l.name}}</b><b class="color-primary float-right"> Rs {{l.price}}</b></h5>
+                                                <p class="pr-70">{{l.desc}} </p>
+												                        <p class="mb-10"><b>Availability:</b>{% if l.stock %}<b> Yes </b>{% else %}<b> No </b>{% endif %} </p>
+												                        <h6 class="mt-20"><a href="https://wa.me/917207770877?text=Hello!%20I%20am%20interested%20in%20one%20of%20your%20shop%20product." class="btn-brdr-primary plr-25"><b>Order Now</b></a></h6>
+                                        </div><!--s-right-->
+                                </div><!-- sided-90x -->
+                        </div><!-- food-menu -->
+						            {% endfor %}
+                </div><!-- row -->
+
+        </div><!-- container -->
+</section>
+
+{% endblock %}
+
+</body>
+</html>
