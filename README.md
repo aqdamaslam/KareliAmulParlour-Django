@@ -20,7 +20,7 @@ The "Kareli Amul Parlour" is an online product availability application designed
    - The WhatsApp API is integrated into the application for customer support. Users can chat with the support team directly through WhatsApp, inquire about product availability, and resolve issues in real-time.
 
 ---
-
+ 
 ## Hosting on AWS Services
 
 The application is hosted on AWS infrastructure, ensuring scalability, security, and reliability.
